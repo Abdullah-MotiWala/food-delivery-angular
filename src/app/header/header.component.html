@@ -1,0 +1,11 @@
+<header>
+  <div class="container">
+    <a href="#" routerLink="/">{{companyName}}</a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="">Cart</a></li>
+      <p *ngIf="cartCount > 0">{{cartCount}}</p>
+    </ul>
+  </nav>
+</header>

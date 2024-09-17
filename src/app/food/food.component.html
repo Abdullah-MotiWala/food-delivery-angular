@@ -1,0 +1,7 @@
+<app-header [companyName]='food' [cartCount]="10"></app-header>
+<div>
+  Item Name is
+  <p><input type="text" [value]="food" /></p>
+
+  <button (click)="addToCart()">Add to cart</button>
+</div>

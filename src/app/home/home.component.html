@@ -1,0 +1,14 @@
+<app-search></app-search>
+<app-child (messageEvent)="recieveMessage($event)"></app-child>
+<app-child2></app-child2>
+<ul>
+  <li *ngFor="let food of foodServices">
+    <div>
+      Item Name is
+      <p >
+        <a routerLink="/food/{{ food }}"> {{ food }} {{ 2 + 2 }}</a>
+      </p>
+    </div>
+    <p class="favorite">{{ test ? "true" : "false" }}</p>
+  </li>
+</ul>
